@@ -1,0 +1,36 @@
+﻿
+@model MCAP.Nova.UW.GetMinimumRate.Models.tblDropDownList
+
+
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <p> Enter Product
+        @Html.DropDownList("Products", "Select")    
+    </p>
+
+    <p> Enter Program  
+        @Html.DropDownList("Programs", "Select")
+    </p>
+
+    <p>Enter Start Date
+    @Html.EditorFor(model => model.startdate, new { @type = "date" })
+    @Html.ValidationMessageFor(model => model.startdate)
+    </p>
+
+    <p>Enter End Date
+        @Html.EditorFor(model => model.enddate, new { @type = "date" })
+    @Html.ValidationMessageFor(model => model.enddate)
+    </p>
+    <br />
+
+    <p><input name="GetMinimumRate" type="submit" value="GetMinimumRate" /></p>
+
+}
+
+        @if (ViewData["minimum"] != null)
+        {
+            <text>Minimum Rate =</text> @ViewData["minimum"];
+        }
+
+

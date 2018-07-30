@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MCAP_UWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblDropDownList">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="szCode" />
+      <PropertyRef Name="szValue" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="szCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="szValue" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="MCAP_UWEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblDropDownLists" EntityType="Self.tblDropDownList" />
+  </EntityContainer>
+</Schema>

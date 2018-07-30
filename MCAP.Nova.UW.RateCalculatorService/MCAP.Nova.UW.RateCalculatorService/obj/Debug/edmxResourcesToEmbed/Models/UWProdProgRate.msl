@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MCAP_UWModelStoreContainer" CdmEntityContainer="MCAP_UWEntities">
+    <EntitySetMapping Name="tblUWProdProgRates">
+      <EntityTypeMapping TypeName="MCAP_UWModel.tblUWProdProgRate">
+        <MappingFragment StoreEntitySet="tblUWProdProgRate">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="szProduct" ColumnName="szProduct" />
+          <ScalarProperty Name="dblProductRate" ColumnName="dblProductRate" />
+          <ScalarProperty Name="szProgram" ColumnName="szProgram" />
+          <ScalarProperty Name="dblProgRateAdj" ColumnName="dblProgRateAdj" />
+          <ScalarProperty Name="dtPeriodStartDate" ColumnName="dtPeriodStartDate" />
+          <ScalarProperty Name="dtPeriodEndDate" ColumnName="dtPeriodEndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

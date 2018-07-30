@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MCAP_UWModelStoreContainer" CdmEntityContainer="MCAP_UWEntities">
+    <EntitySetMapping Name="tblDropDownLists">
+      <EntityTypeMapping TypeName="MCAP_UWModel.tblDropDownList">
+        <MappingFragment StoreEntitySet="tblDropDownList">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="szCode" ColumnName="szCode" />
+          <ScalarProperty Name="szValue" ColumnName="szValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
